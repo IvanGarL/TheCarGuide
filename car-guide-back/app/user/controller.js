@@ -1,6 +1,7 @@
 const express = require('express'),
     router = express.Router(),
-    users = require('./queries')
+    users = require('./queries'),
+    validator = require('./validator');
 
 
 // get all users
