@@ -6,13 +6,15 @@ module.exports = function (env) {
     switch (env) {
         //Ejecución local
         case "dev": {
-            mongoose.connect('mongodb://localhost:27017/the-car-guide', { useNewUrlParser: true });
-            mongoose.set('useCreateIndex', true);
+            mongoose.connect('mongodb://localhost:27017/the-car-guide', { useNewUrlParser: true ,
+                                                                          useCreateIndex: true, 
+                                                                          useUnifiedTopology: true,});
         } break;
         //Producción
         case "prod": {
-            mongoose.connect(uri, { useNewUrlParser: true});
-            mongoose.set('useCreateIndex', true);
+            mongoose.connect(uri, { useNewUrlParser: true,
+                                    useCreateIndex: true, 
+                                    useUnifiedTopology: true,});
         } break;
     }
 }
