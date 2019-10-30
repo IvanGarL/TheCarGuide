@@ -4,6 +4,8 @@ const express = require('express'),
       User = require('./userModel'),
       Role = require('../authorization/roleModel');
 
+//TODO: Activar auth middleware
+
 router.post('/signin', async (req, res) => {
     // Create a new user
     try {
@@ -52,7 +54,7 @@ router.post('/login', async(req, res) => {
 
 })
 
-//TODO: Activar auth middleware
+
 router.get('/', async(req, res) => {
     //Login a registered user
     try {
