@@ -21,6 +21,7 @@ class Service extends Component {
             </div>
         );
     }
+    
 }
 
 export default Service;
