@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./Components/Home/statistics";
 import ServicesList from './Components/Services/servicesList';
 import CarsList from './Components/Cars/carsList';
+import CarDetail from './Components/Cars/carDetail';
 
 export default class app extends Component {
  
@@ -18,8 +19,9 @@ export default class app extends Component {
           <Navegacion />
         </div>   
         <Route exact path="/" component={Home} />
-        <Route path="/cars" component={CarsList} />
-        <Route path="/services" component={ServicesList} />
+        <Route path="/cars" component={CarsList} exact/>
+        <Route path="/cars/:name" component={CarDetail} exact/>
+        <Route path="/services" component={ServicesList} exact/>
         </BrowserRouter>
         <div id="footer">
           <Footer />

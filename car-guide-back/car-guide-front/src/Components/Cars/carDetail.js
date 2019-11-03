@@ -1,26 +1,44 @@
 import React, {Component} from "react";
 import "../../App.css";
-class Car extends Component {
+class CarDetail extends Component {
+    constructor(props)
+    {
+        super(props);
+
+    };
     render()
     {
         return(
-            <div className="dashboard-background">
-            <h1>Marca y modelo</h1>
-            <div className="card-deck">
-            <h5>Precio</h5>
-            <h5>Nombre vendedor:</h5>
-            <h5>Telefono vendedor:</h5>
-            <h5>Ubicacion del vehiculo:</h5>
-            <h5>Version del vehiculo:</h5>
-            <h5>Año:</h5>
-            <h5>Cilindraje:</h5>
-            <h5>Kilometros:</h5>
-            <h5>Tipo de combustible:</h5>
-            <h5>Placa:</h5>
+        <div className="dashboard-background2">
+            
+            <h1>NAME</h1>
+            <div className="row">
+                <div className="col-md-6">
+                    <a ><img src="logo.png" width="10%" alt="logo"/></a>
+                </div>
+                <div className="col-md-6">
+                    <div className="card-deck2">
+                        <div className="data-card">
+
+                            <h5>PRECIO</h5>
+                            <h5>Modelo:</h5>
+                            <h5>Kilometros recorridos:</h5>
+                            <h5>Categoria:</h5>
+                            <h5>Color:</h5>
+                            <h5>Placa:</h5>
+                            <h5>Marca:</h5>
+                            <h5>Kilometros:</h5>
+                            <h5>Cilindraje:</h5>
+                            <h5>Número de puertas:</h5>
+                            <h5>Transmision:</h5>
+                            </div>
+                        </div>
+                    </div>
             </div>
+            
         </div>  
         )
     }
 
 }
-export default Car;
+export default CarDetail;

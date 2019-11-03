@@ -27,6 +27,7 @@ class Home extends Component {
                 <div className="data-card">
                 <h5 id="card-title">Modelo más popular</h5>
                 <p id="card-data">Aveo</p>
+                
                 </div>
                 <br></br>
             </div>
