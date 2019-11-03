@@ -6,15 +6,14 @@ class Home extends Component {
 
         return(
         <div>
-            <div class="container2">
+            <div className="container2">
                 <a ><img src="home.jpg" width="100%" alt="logo"/></a>
-                <div class="text-block">
+                <div className="text-block">
                     <h4>LA GUIA IDEAL</h4>
                     <p>Trabajamos para brindarte toda la información que necesitas para tomar las mejores decisiones que te permitan encontrar el auto de tus sueños.</p>
                 </div>
             </div>
-            <h1 className="align">Conoce las últimas tendencias</h1>
-            
+            <h1 className="align">Conoce las últimas <span class="pink">tendencias</span></h1>
             <div className="card-deck2 dashboard-background2">
                 <div className="data-card">
                 <h5 id="card-title">Más vendido</h5>

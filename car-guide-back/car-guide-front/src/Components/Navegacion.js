@@ -9,39 +9,31 @@ class Navegacion extends Component {
       pagActual:'Inicio',
     };
   }
+  handleClick(){
+  };
     render(){
       return(
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-      <div class="row">
-      <div class="col-1"></div>
-        <div class="col-4">
-          <a className="navbar-brand"><h5 className="text-light ">The Car</h5></a>
-          <a className="navbar-brand"><h5 className="text-light">GUIDE</h5></a>
+      <div className="row align-items-md-center">
+      <div className="col-md-1"></div>
+        <div className="col-md-3">
+          <a><h5 className="text-light ">The Car</h5></a>
+          <a ><h5 className="text-light">GUIDE</h5></a>
         </div>
-            <div class="col-7">
-                <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span className="navbar-toggler-icon"></span>
-                </button>
+            <div className="col-md-8 ">
 
               <div className="collapse navbar-collapse" id="navbarCollapse">
                   <div className="navbar-nav ml-auto">
                   <NavLink to="/" > 
-                    <a className={this.state.pagActual === 'Inicio' 
-                      ? "a nav-item nav-link red"
-                      : "a nav-item nav-link"} 
-                      id="btn-inicio">Inicio</a>
+                    <a className="a nav-item nav-link link-3" id="btn-inicio">INICIO</a>
                   </NavLink>
                   <NavLink to="/cars">
-                    <a  className={this.state.pagActual === 'Ventas' 
-                      ? "a nav-item nav-link red"
-                      : "a nav-item nav-link"} id="btn-cars">Ventas</a>
+                    <a className="a nav-item nav-link link-3" id="btn-cars">VENTAS</a>
                   </NavLink>
                   <NavLink to="/services" >
-                    <a className={this.state.pagActual === 'Servicios' 
-                      ? "a nav-item nav-link red"
-                      : "a nav-item nav-link"} id="btn-services">Servicios</a>
+                    <a className="a nav-item nav-link link-3" id="btn-services">SERVICIOS</a>
                   </NavLink>
-                  
+                  <button type="button" className="btn btn-danger" onClick="handleClick()">LOGIN</button>
                   </div>
               </div>
             </div>
