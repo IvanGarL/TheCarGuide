@@ -3,9 +3,17 @@ import "../../App.css";
 import { Link } from "react-router-dom";
 import Car from "./car";
 class CarsList extends Component {
-
+    getAll(){
+        fetch(
+           "/cars/" 
+        ).then((response)=>{response.json();
+        }).then(data=>this.setState({carros:data}))
+    }
     constructor(props) {
         super(props);
+        this.state= { 
+            carros:[],
+        };
         this.state = {
             cars:[
                 {
@@ -268,7 +276,7 @@ class CarsList extends Component {
     }
 
     renderCars() {
-        return this.state.cars.map(
+        return this.state.carros.map(
             (car,i) => <div className="col-md-3"><Link to={`/cars/${car.name}`}>
                 <Car obj={car} key={i}/>
             </Link> </div>
@@ -276,6 +284,7 @@ class CarsList extends Component {
     }
     render()
     {
+        this.getAll();
         return(
             <div className="card-deck2 dashboard-background2">
                     <div className="container-fluid">
