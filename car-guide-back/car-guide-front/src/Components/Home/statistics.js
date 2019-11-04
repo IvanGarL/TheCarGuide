@@ -8,21 +8,19 @@ class Home extends Component {
             carros:[],
           };
     }
-    get(){
+    getAll(){
         fetch(
-           "/cars" 
-        ).then((response)=>{ return response.json();
-          }).then(data=>{
-            
-            console.log(data);
-            this.setState({carros:data});
-            console.log(this.state.carros);
-        });
-
+            "/cars" 
+         ).then((response)=>{return response.json();
+         }).then(data=>{
+         console.log(data);
+         this.setState({carros:data});
+         console.log(this.state.carros);
+       })
     }
     render()
     {
-        this.get();
+        this.getAll();
         return(
         <div>
             <div className="container2">
