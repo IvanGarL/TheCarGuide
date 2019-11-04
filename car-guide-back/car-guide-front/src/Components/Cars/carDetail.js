@@ -27,7 +27,7 @@ class CarDetail extends Component {
                 <h1>{this.state.datos[0].name}</h1>
                 <div className="row align-items-md-center">
                     <div className="col-md-6">
-                    <img class="card-img-top" width="100" height="300" src={`${this.state.datos[0].image}`} alt="Card image cap"></img>
+                    <img class="card-img-top space2" width="100" height="300" src={`${this.state.datos[0].image}`} alt="Card image cap"></img>
                     </div>
                     <div className="col-md-3">
                         <div className="card-deck2">
@@ -61,7 +61,7 @@ class CarDetail extends Component {
     render()
     {
         return(
-        <div className="dashboard-background2 space">
+        <div className="dashboard-background2">
             <div className="container-fluid">
                 <div className="row">
                     {this.renderDetail()}
