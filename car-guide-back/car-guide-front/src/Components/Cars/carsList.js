@@ -14,7 +14,6 @@ class CarsList extends Component {
            "/cars" 
         ).then((response)=>{return response.json();
         }).then(data=>{
-        console.log(data);
         this.setState({carros:data});
         console.log(this.state.carros);
       })
@@ -22,7 +21,7 @@ class CarsList extends Component {
 
     renderCars() {
         return this.state.carros.map(
-            (car,i) => <div className="col-md-3"><Link to={`/cars/${car.license}`}>
+            (car,i) => <div className="col-md-4"><Link to={`/cars/${car.license}`}>
                 <Car obj={car} key={i}/>
             </Link> </div>
         )
