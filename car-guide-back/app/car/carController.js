@@ -39,8 +39,8 @@ router.post('/many', async (req, res) => {
 router.get("/", (req, res) => {
     try{
         Car.find({}, (err, all) => {
-            if(err) return next(err);
-            res.send(all);
+            if(err) return console.log(err);
+            res.status(200).send(all);
         })
     } catch ( error ){
         res.status(400).send( error );
@@ -51,8 +51,8 @@ router.get("/:license", (req, res) => {
     var req_license = req.params.license;
     try{
         Car.find({license: req_license}, (err, doc) => {
-            if(err) return next(err);
-            res.send(doc);
+            if(err) return console.log(err);
+            res.status(200).send(doc);
         })
     } catch ( error ){
         res.status(400).send( error );
@@ -60,12 +60,14 @@ router.get("/:license", (req, res) => {
 });
 
 router.put("/:license", (req, res) => {
+    var req_license = req.params.license;
     try{
-        Car.findOneAndUpdate({license: req_license}, {$set : req.body}, (err, doc) => {
-            if(err) return next(err);
-            res.send(doc);
-        })
+        Car.findOneAndUpdate({license: req_license}, {$set : req.body}, { new : true }, (err, doc) => {
+            if(err) return console.log(err);
+            res.status(200).send( doc );
+        });
     } catch ( error ){
+        console.log(error);
         res.status(400).send( error );
     }
 });
@@ -74,8 +76,8 @@ router.delete("/:license", (req, res) => {
     var req_license = req.params.license;
     try{
         Car.deleteOne({license: req_license}, (err, doc) => {
-            if(err) return next(err);
-            res.send(doc);
+            if(err) return console.log(err);
+            res.status(200).send(doc);
         })
     } catch ( error ){
         res.status(400).send( error );

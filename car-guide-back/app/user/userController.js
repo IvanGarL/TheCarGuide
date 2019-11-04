@@ -1,8 +1,6 @@
 const express = require('express'),
       router  = express.Router(),
-      FKHelper = require('../../helpers/fk-helper'),
-      User = require('./userModel'),
-      Role = require('../authorization/roleModel');
+      User = require('./userModel');
 
 //TODO: Activar auth middleware
 
@@ -10,19 +8,18 @@ router.post('/signin', async (req, res) => {
     // Create a new user
     try {
         console.log(req.body);
-        if(FKHelper(Role, req.body.role)){
-            const user = new User(req.body);
-            await user.save();
-            const token = await user.generateAuthToken();
-            res.clearCookie('auth');
-            res.cookie('auth', token, { domain: '.TheCarGuide.com',
-                                        expires: new Date(Date.now() + 36000000),
-                                        httpOnly: true,
-                                        path: '/',
-                                        secure: true
-                                      });
-            res.status(201).send({ user, token });
-        }
+        const user = new User(req.body);
+        await user.save();
+        const token = await user.generateAuthToken();
+        res.clearCookie('auth');
+        res.cookie('auth', token, { domain: '.TheCarGuide.com',
+                                    expires: new Date(Date.now() + 36000000),
+                                    httpOnly: true,
+                                    path: '/',
+                                    secure: true
+                                    });
+        res.status(201).send({ user, token });
+        
     } catch (error) {
         res.status(400).send(error);
     }
