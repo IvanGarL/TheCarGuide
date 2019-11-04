@@ -7,20 +7,51 @@ class Home extends Component {
         this.state= { 
             carros:[],
           };
+        
+        this.renderCarsStatistics = this.renderCarsStatistics.bind(this);
     }
-    getAll(){
+    componentDidMount(){
         fetch(
             "/cars" 
          ).then((response)=>{return response.json();
          }).then(data=>{
-         console.log(data);
          this.setState({carros:data});
-         console.log(this.state.carros);
        })
+    }
+
+    renderCarsStatistics() {
+        if (this.state.carros.length > 0) 
+        {
+            return (
+                <div className="row dashboard-background2">
+                    <div className="col-4">
+                        <div className="card space link">
+                        <h5 id="card-title">Más vendido</h5>
+                        <img class="card-img-top" width="50" height="200" src={`${this.state.carros[4].image}`} alt="Card image cap"></img>
+                        <p id="card-data">{this.state.carros[4].name}</p> 
+                        </div>
+                    </div>
+                    <div className="col-4">
+                        <div className="data-card">
+                        <h5 id="card-title">Marca más popular</h5>
+                        <img class="card-img-top" width="50" height="200" src={`${this.state.carros[2].image}`} alt="Card image cap"></img>
+                        <p id="card-data">{this.state.carros[2].brand}</p>
+                        </div>
+                    </div>
+                    <div className="col-4">
+                        <div className="data-card">
+                        <h5 id="card-title">Modelo más popular</h5>
+                        <img class="card-img-top" width="50" height="200" src={`${this.state.carros[3].image}`} alt="Card image cap"></img>
+                        <p id="card-data">{this.state.carros[3].model}</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            ) 
+        }
     }
     render()
     {
-        this.getAll();
         return(
         <div>
             <div className="container2">
@@ -31,23 +62,7 @@ class Home extends Component {
                 </div>
             </div>
             <h1 className="align">Conoce las últimas <span class="pink">tendencias</span></h1>
-            <div className="card-deck2 dashboard-background2">
-                <div className="data-card">
-                <h5 id="card-title">Más vendido</h5>
-                <p id="card-data">{this.state.carros[1].name}</p>
-                
-                </div>
-                <div className="data-card">
-                <h5 id="card-title">Marca más popular</h5>
-                <p id="card-data">{this.state.carros[2].brand}</p>
-                </div>
-                <div className="data-card">
-                <h5 id="card-title">Modelo más popular</h5>
-                <p id="card-data">{this.state.carros[1].model}</p>
-                
-                </div>
-                <br></br>
-            </div>
+            {this.renderCarsStatistics()}
         </div>
         )
     }
