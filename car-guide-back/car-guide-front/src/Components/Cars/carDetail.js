@@ -12,7 +12,7 @@ class CarDetail extends Component {
     }
     componentDidMount()
     {
-        fetch('/cars/'+this.props.match.params.name
+        fetch('/cars/'+this.props.match.params.license
          ).then((response)=>{return response.json();
          }).then(data=>{
             this.setState({datos:data});

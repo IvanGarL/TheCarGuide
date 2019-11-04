@@ -1,28 +1,27 @@
 import React, {Component} from "react";
-import "./cars.css";
-import { Link } from "react-router-dom";
-import Car from "./car";
-class CarsList extends Component {
+import "./users.css";
+import User from "./user";
+class UsersList extends Component {
   constructor(props) {
     super(props);
     this.state= { 
-        carros:[],
+        usuarios:[],
       };
     }
     getAll(){
         fetch(
-           "/cars" 
+           "/users" 
         ).then((response)=>{return response.json();
         }).then(data=>{
-        this.setState({carros:data});
+        this.setState({usuarios:data});
       })
     }
 
-    renderCars() {
-        return this.state.carros.map(
-            (car,i) => <div className="col-md-4"><Link to={`/cars/${car.license}`}>
-                <Car obj={car} key={i}/>
-            </Link> </div>
+    renderUsers() {
+        return this.state.usuarios.map(
+            (user,i) => <div className="col-md-6">
+                <User obj={user} key={i}/>
+            </div>
         )
     }
     render()
@@ -32,7 +31,7 @@ class CarsList extends Component {
             <div className="card-deck2 dashboard-background2">
                     <div className="container-fluid">
                         <div className="row">
-                            {this.renderCars()}
+                            {this.renderUsers()}
                         </div>
                     </div>
             </div>
@@ -40,4 +39,4 @@ class CarsList extends Component {
     }
 
 }
-export default CarsList;
+export default UsersList;
