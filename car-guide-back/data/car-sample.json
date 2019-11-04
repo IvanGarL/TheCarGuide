@@ -115,7 +115,7 @@
     "cil_capacity": 600,
     "model": "BMW M5",
     "doors": 4,
-    "transmission": "automatico",
+    "transmission": "automatica",
     "image": "http://www.caranddriver.es/themes/ee/site/CD/asset/img/contenidos/10607/bmw-m5-2018__pinned.jpg"
   },
   {
@@ -132,7 +132,7 @@
     "cil_capacity": 600,
     "model": "BMW M5",
     "doors": 4,
-    "transmission": "automatico",
+    "transmission": "automatica",
     "image": "https://i.gaw.to/photos/3/0/4/304864_2018_BMW_5_Series.jpg"
   },
   {
@@ -149,7 +149,7 @@
     "cil_capacity": 600,
     "model": "BMW M5",
     "doors": 4,
-    "transmission": "automatico",
+    "transmission": "automatica",
     "image": "https://icdn-3.motor1.com/images/mgl/BnpBR/s4/2018-bmw-m5-with-m-performance-parts.jpg"
   },
   {
@@ -893,12 +893,12 @@
     "license": "736-BTS",
     "price": 700000000,
     "brand": "Chevrolet",
-    "centcubs": 29,
-    "cil_capacity": "http://veh-markets.com/uploads/postfotos/2013-chevrolet-camaro-ss-1le-7000-miles-1-owner-silver-ice-metallic-mint-1.jpg",
-    "model": "",
-    "doors": "",
-    "transmission": "",
-    "image": ""
+    "centcubs": 6200,
+    "cil_capacity": 1014,
+    "model": "Chevrolet Camaro ss",
+    "doors": 2,
+    "transmission": "mecanica",
+    "image": "http://veh-markets.com/uploads/postfotos/2013-chevrolet-camaro-ss-1le-7000-miles-1-owner-silver-ice-metallic-mint-1.jpg"
   },
   {
     "year": 2018,

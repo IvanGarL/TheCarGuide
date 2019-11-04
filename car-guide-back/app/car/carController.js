@@ -5,6 +5,11 @@ const express = require('express'),
 
 //TODO: include auth.
 
+function parseToJSONObj(smth){
+    var jsonStr = JSON.stringify(smth);
+    return JSON.parse(jsonStr);
+}
+
 router.post('/', async (req, res) => {
     //create a new car
     try {
@@ -19,12 +24,13 @@ router.post('/', async (req, res) => {
 router.post('/many', async (req, res) => {
     //create a new car
     try {
-        const data = JSON.parse(req.body);
+        var data = parseToJSONObj(req.body);
         Car.insertMany(data, (err, docs) =>{
-            if(err) return next(err);
-            res.send(docs);
+            if(err) return console.log(err);
+            res.status(201).send(docs);
         });
     } catch (error){
+        console.log(error);
         res.status(400).send( error );
     }
 });
@@ -77,4 +83,6 @@ router.delete("/:license", (req, res) => {
 });
 
 //TODO: GET apis for filters
+
+module.exports = router;
 
