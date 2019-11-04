@@ -10,9 +10,15 @@ class Home extends Component {
     }
     get(){
         fetch(
-           "/cars/" 
-        ).then((response)=>{response.json();
-        }).then(data=>this.setState({carros:data}))
+           "/cars" 
+        ).then((response)=>{ return response.json();
+          }).then(data=>{
+            
+            console.log(data);
+            this.setState({carros:data});
+            console.log(this.state.carros);
+        });
+
     }
     render()
     {
