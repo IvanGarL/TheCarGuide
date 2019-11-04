@@ -4,6 +4,8 @@ const express = require('express'),
       Resource = require('./resourceModel'),
       Role = require('./roleModel');
 
+//TODO: Implemet Auth
+
 router.post('/role', async (req, res) => {
     //create a new role
     try {
@@ -49,11 +51,36 @@ router.get("/resources", (req, res) => {
 })
 
 router.post('/permission',async (req, res) => {
-    //create a new role
+    //create a new permission
     try {
         const permission = new Permission(req.body);
         await permission.save();
         res.status(201).send({ permission });
+    } catch (error){
+        res.status(400).send( error );
+    } 
+});
+
+router.put("/permission/:name", (req, res) => {
+    var req_name = req.params.name;
+    try{
+        Car.findOneAndUpdate({name: req_name}, {$set : req.body}, { new : true }, (err, doc) => {
+            if(err) return console.log(err);
+            res.status(200).send( doc );
+        });
+    } catch ( error ){
+        console.log(error);
+        res.status(400).send( error );
+    }
+});
+
+router.delete('/permission/:name',async (req, res) => {
+    var req_name = req.params.name
+    try {
+        Permission.deleteOne({name: req_name}, (err, doc) => {
+            if(err) return console.log(err);
+            res.status(200).send(doc);
+        })
     } catch (error){
         res.status(400).send( error );
     } 

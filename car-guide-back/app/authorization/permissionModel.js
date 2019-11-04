@@ -1,8 +1,14 @@
 "use strict";
 const mongoose = require ('../../config/mongoose').mongoose;
-const Schema = mongoose.Schema;
+const FKHelper = require('../../helpers/fk-helper');
 
 const permissionSchema = mongoose.Schema({
+    name : {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true
+    },
     create : {
         type: Boolean,
         required: true
@@ -20,12 +26,24 @@ const permissionSchema = mongoose.Schema({
         required: true
     },
     rol : {
-        type: Schema.Types.ObjectId, 
-        ref: 'Role'
+        type: String, 
+        ref: 'Role',
+        required: true,
+        validate: {
+            validator: (v) => {
+				return FKHelper(mongoose.model('Role'), v);
+			}
+		}
     },
     resource : {
-        type: Schema.Types.ObjectId, 
-        ref: 'Resource'
+        type: String, 
+        ref: 'Resource',
+        required: true,
+        validate: {
+            validator: (v) => {
+				return FKHelper(mongoose.model('Resource'), v);
+			}
+		}
     }
 });
 

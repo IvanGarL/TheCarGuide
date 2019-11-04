@@ -4,7 +4,9 @@ const mongoose = require ('../../config/mongoose').mongoose,
       bcrypt   = require('bcrypt'),
       jwt      = require('jsonwebtoken'),
       secret = require('../../config/secret'),
-      validator = require('validator');
+      validator = require('validator'),
+      FKHelper = require('../../helpers/fk-helper');
+
 
 const userSchema = Schema({
     username: {
@@ -42,9 +44,14 @@ const userSchema = Schema({
         minLength: 8
     },
     role: {
-        type: Schema.Types.ObjectId, 
+        type: String, 
         ref: 'Role',
-        required: true 
+        required: true,
+        validate: {
+            validator: (v) => {
+				return FKHelper(mongoose.model('Role'), v);
+			}
+		}
     },
     tokens: [{
         token: {
