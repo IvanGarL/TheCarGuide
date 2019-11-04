@@ -1,16 +1,13 @@
 import React, {Component} from "react";
 import "./cars.css";
-var scrI="";
 class Car extends Component {
 
     render()
     {
-        scrI = this.props.obj.image;
-        console.log(scrI);
         return(
             <div className="card space link">
                 <h5 className="card-title">${this.props.obj.price}</h5>
-                <img class="card-img-top" width="50" height="200" src={`${scrI}`} alt="Card image cap"></img>
+                <img class="card-img-top" width="50" height="200" src={`${this.props.obj.image}`} alt="Card image cap"></img>
                <div className="row">
                     <div className="col-6">
                         <h6 id="card-sub-title">Modelo: {this.props.obj.model}</h6>

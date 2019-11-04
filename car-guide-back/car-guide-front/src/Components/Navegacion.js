@@ -25,15 +25,21 @@ class Navegacion extends Component {
               <div className="collapse navbar-collapse" id="navbarCollapse">
                   <div className="navbar-nav ml-auto">
                   <NavLink to="/" > 
-                    <a className="a nav-item nav-link link-3" id="btn-inicio">INICIO</a>
+                    <a className="nav-item nav-link link-3" id="btn-inicio">INICIO</a>
                   </NavLink>
                   <NavLink to="/cars">
-                    <a className="a nav-item nav-link link-3" id="btn-cars">VENTAS</a>
+                    <a className="nav-item nav-link link-3" id="btn-cars">VENTAS</a>
                   </NavLink>
                   <NavLink to="/services" >
-                    <a className="a nav-item nav-link link-3" id="btn-services">SERVICIOS</a>
+                    <a className=" nav-item nav-link link-3" id="btn-services">SERVICIOS</a>
                   </NavLink>
-                  <button type="button" className="btn btn-danger" onClick="handleClick()">LOGIN</button>
+                  <NavLink to="/users" >
+                    <a className=" nav-item nav-link link-3" id="btn-users">USUARIOS</a>
+                  </NavLink>
+                  <NavLink to="/car" >
+                    <a className=" nav-item nav-link link-3" id="btn-add">PUBLICAR AUTO</a>
+                  </NavLink>
+                    <button type="button" className="btn btn-danger" onClick="handleClick()">LOGIN</button>
                   </div>
               </div>
             </div>

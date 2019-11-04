@@ -40,6 +40,11 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
+  .space2 {
+    margin-top: 15px;
+    background-color: #5555;
+    margin-bottom: 15px;
+  }
   #card-title {
     font-size: 32px;
     color:black;
