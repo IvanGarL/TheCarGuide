@@ -37,7 +37,7 @@ class Navegacion extends Component {
                     <a className=" nav-item nav-link link-3" id="btn-users">USUARIOS</a>
                   </NavLink>
                   <NavLink to="/car" >
-                    <a className=" nav-item nav-link link-3" id="btn-add">AGREGAR AUTO</a>
+                    <a className=" nav-item nav-link link-3" id="btn-add">PUBLICAR AUTO</a>
                   </NavLink>
                     <button type="button" className="btn btn-danger" onClick="handleClick()">LOGIN</button>
                   </div>
