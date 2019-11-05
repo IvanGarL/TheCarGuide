@@ -105,9 +105,17 @@ A continuacón se presenta el análisis realizado para cumplir con las pautas de
   - Los encabezados y etiquetas son inteligibles, aún fuera de contexto
 3.2.4.7 Foco visible
   - El foco del teclado siempre es visible desde el momento en que se empieza a usar
-
+3.2.4.8 Ubicación
+  -  Siempre es visible en qué página del sitio se está navegando con respecto a las demás páginas
+<br>
 <h4>Comprensible</h4>
+
+<br>
 <h4>Robusto</h4>
+3.4.1.1 Procesamiento
+  - Se respetan las buenas prácticas respecto a los lenguajes de marcado (HTML)
+3.4.2 Nombre, función, valor
+  - El código fuente está debidamente marcado para mejorar compatibilidad con dispositivos de asistencia
 
 # Test de usabilidad: carpeta con los videos de los test
 https://drive.google.com/drive/folders/10_5gpfQ8vlrfxvNSgTnJKBkQmwl5uycQ?usp=sharing
