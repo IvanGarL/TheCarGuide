@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import './services.css';
 class Service extends Component {
 
     render(){
@@ -18,7 +18,7 @@ class Service extends Component {
                             <p>{this.props.service.description}</p>
                         </div>
                         <div className="row bg-danger text-light">
-                            <p className="text-center">$ {this.props.service.price} COP</p>
+                            <p className="text-align"><b>$ {this.props.service.price} COP </b></p>
                         </div>
                     </div>
                     <div className="col-1"></div>
