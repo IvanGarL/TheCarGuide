@@ -47,3 +47,8 @@
 #nav-logo{
   width: 150px;
 }
+
+#logo {
+  max-width: 75%;
+  padding: 15px;
+}

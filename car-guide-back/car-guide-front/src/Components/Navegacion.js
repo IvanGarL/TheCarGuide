@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {NavLink}  from 'react-router-dom'
+import {NavLink, Redirect}  from 'react-router-dom'
 import "./NavegacionFooter.css";
 
 class Navegacion extends Component {
@@ -8,11 +8,11 @@ class Navegacion extends Component {
     this.state = { 
       pagActual:'Inicio',
     };
+
+    
   }
-  handleClick(){
-    return;
-  };
-    render(){
+  
+  render(){
       return(
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
       <div className="row align-items-md-center">
@@ -34,7 +34,8 @@ class Navegacion extends Component {
                   </NavLink>
                   <NavLink to="/car" className=" nav-item nav-link link-3" id="btn-add">ADMIN
                   </NavLink>
-                    <button type="button" id="btn-login" className="btn btn-danger" onClick={this.handleClick()}>LOGIN</button>
+                  <NavLink to="/login" className=" nav-item nav-link link-4" id="btn-registerlogin">LOGIN
+                  </NavLink>
                   </div>
               </div>
             </div>
