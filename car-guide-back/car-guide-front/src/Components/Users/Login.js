@@ -46,20 +46,20 @@ class Login extends React.Component {
                     onSubmit={this.handleSubmit}
                   >
                     <div className="form-group">
-                      <input
+                      <label>Correo electronico: <input
                         type="email"
                         id="login-email"
                         className="form-control input-lg"
                         placeholder="email"
-                      />
+                      /></label>
                     </div>
                     <div className="form-group">
-                      <input
+                      <label>Contraseña: <input
                         type="password"
                         id="login-password"
                         className="form-control input-lg"
                         placeholder="password"
-                      />
+                      /></label>
                     </div>
                     <div className="form-group text-center">
                       <input
