@@ -46,7 +46,10 @@ El código desarrollado cuenta con licencia MIT. La cual es una licencia de soft
 El proyecto se lleva a cabo usando frameworks como Express y react. Así mismo se utilizaron lenguajes de programacion como javaScript.
 <h4>URL video de funcionalidad:<h4>
 
-
 <h4>URL de la página corriendo en un servidor público (HerokuAPP):<h4>
 http://thecarguide.herokuapp.com
+  
+   
+# Test de usabilidad: carpeta con los videos de los test
+https://drive.google.com/drive/folders/10_5gpfQ8vlrfxvNSgTnJKBkQmwl5uycQ?usp=sharing
 
