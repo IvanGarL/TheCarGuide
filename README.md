@@ -38,6 +38,40 @@ Dueños de autos de Colombia, interesados en venta y/o mantenimiento de automovi
   <li>Pablo Suarez</li>
 </ol> 
 
+# Comentarios sobre el cumplimiento de los test
+A continuacón se presenta el análisis realizado para cumplir con las pautas de usabilidad según la normatividad aplicable a Colombia, esta normatividad se encuentra en la página https://ntc5854.accesibilidadweb.co/index.php/explicacion-tecnica/como-se-hacen-las-cosas/principios-de-la-norma/
+* Perceptible
+3.1.4.9. Imágenes de texto: 
+  Ademas del logo, se encuentra el texto de diseño de la página de inicio.
+3.1.4.8. Presentación visual
+  - La elección de color de fondo y primer plano por parte del usuario se proyecta para la segunda versión de la aplicación.
+  - El ancho de todos los textos no es mayor a 80 caracteres.
+  - Los textos solo estan justificados a lado izquierdo.
+  - El espacio entre lineas de los textos es mayor a 1,5.
+  - El texto se ajusta hasta 200% de manera legible.
+3.1.4.7. Sonido de fondo bajo o ausente
+  - La página no tiene ningun tipo de sonido.
+3.1.4.6. Contraste mejorado
+  - El contraste de los textos y las imágenes esta en los rangos esperados.
+3.1.4.5. Imágenes de texto
+  - Se utiliza texto en vez de imágenes de texto en el caso de la página de inicio.
+3.1.4.4. Cambio de tamaño de texto
+  - Todos los textos se ajustan de tamaño hasta un 200%.
+3.1.4.3. Contraste minimo
+  - A partir de las herramientas para diseñadores que ofrece el navegador chrome, se determino que todos los contrastes de las páginas son superiores a 4,5.
+3.1.4.2. Control de audío
+  - La página no tiene ningun audio.
+3.1.4.1. Uso de color
+  - El color no es el único medio de transmisión de información, todos los elementos HTML de la página tienen algun texto auxiliar.
+3.1.3.3. Características sensoriales
+  - La funcionalidad del contenido no depende completamente de características sensoriales.
+* Operable
+* Comprensible
+* Robusto
+
+# Test de usabilidad: carpeta con los videos de los test
+https://drive.google.com/drive/folders/10_5gpfQ8vlrfxvNSgTnJKBkQmwl5uycQ?usp=sharing
+
 # Otros
 <h4>Licencia:</h4>
 El código desarrollado cuenta con licencia MIT. La cual es una licencia de software libre permisivo. Es decir, con requisitos mínimos sobre cómo se puede redistribuir el software, esto es cómo se puede usar, copiar, modificar, reutilizar, integrar con otro software, publicar, vender entre otras actividades.
@@ -50,6 +84,3 @@ El proyecto se lleva a cabo usando frameworks como Express y react. Así mismo s
 http://thecarguide.herokuapp.com
   
    
-# Test de usabilidad: carpeta con los videos de los test
-https://drive.google.com/drive/folders/10_5gpfQ8vlrfxvNSgTnJKBkQmwl5uycQ?usp=sharing
-
