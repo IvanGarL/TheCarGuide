@@ -40,7 +40,7 @@ class Register extends React.Component {
           <Row>
             <Col lg="6" md="6">
             <div className="logo-wrap">
-                <img id="logo" src="Signin.jpg" />
+                <img id="logo" src="Signin.jpg" alt="imagen registro" />
               </div>
             </Col>
             <Col lg="6" md="6">
@@ -58,38 +58,39 @@ class Register extends React.Component {
                     onSubmit={this.handleSubmit}
                   >
                     <div className="form-group">
-                      <input
+                      <label>Nombre de usuario: <input
                         type="text"
                         id="register-username"
                         className="form-control input-lg"
                         placeholder="usuario"
-                      />
+                        required/></label>
                     </div>
                     <div className="form-group">
-                      <input
+                    <label>Nombres y apellidos: <input
                         type="text"
                         id="register-name"
                         className="form-control input-lg"
                         placeholder="nombres y apellidos"
-                      />
+                        required /></label>
                     </div>
                     <div className="form-group">
-                      <input
+                    <label>Edad: <input
                         type="number"
                         id="register-age"
                         className="form-control input-lg"
                         placeholder="edad"
-                      />
+                        required/></label>
                     </div>
                     <div className="form-group">
-                      <input
+                    <label>Correo electronico: <input
                         type="email"
                         id="register-email"
                         className="form-control input-lg"
                         placeholder="email"
-                      />
+                        required /></label>
                     </div>
                     <div className="form-group">
+<<<<<<< HEAD
                       <input
                         type="number"
                         id="register-phone"
@@ -99,27 +100,30 @@ class Register extends React.Component {
                     </div>
                     <div className="form-group">
                       <input
+=======
+                    <label>Contraseña: <input
+>>>>>>> 484e83a2ece1beda93cb135e5cad87e3cc15911b
                         type="password"
                         id="register-password"
                         className="form-control input-lg"
                         placeholder="password"
-                      />
+                        required /></label>
                     </div>
                     <div className="form-group">
-                      <input
+                    <label><input
                         type="hidden"
                         id="register-role"
                         className="form-control input-lg"
                         value="User"
-                      />
+                        /></label>
                     </div>
                     <div className="form-group text-center">
-                      <input
+                    <label><input
                         type="submit"
                         id="register-button"
                         className="btn btn-primary btn-lg btn-block"
-                        value="Ingresar"
-                      />
+                        value="Registar"
+                      /></label>
                     </div>
                     <div className="form-group text-center">
                       <p className="text-center">
