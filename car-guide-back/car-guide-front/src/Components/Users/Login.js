@@ -53,7 +53,7 @@ class Login extends React.Component {
                         id="login-email"
                         className="form-control input-lg"
                         placeholder="email"
-                      /></label>
+                        required/></label>
                     </div>
                     <div className="form-group">
                       <label>Contraseña: <input
@@ -61,7 +61,7 @@ class Login extends React.Component {
                         id="login-password"
                         className="form-control input-lg"
                         placeholder="password"
-                      /></label>
+                      required/></label>
                     </div>
                     <div className="form-group text-center">
                       <input

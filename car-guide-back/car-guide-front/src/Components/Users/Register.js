@@ -69,7 +69,7 @@ class Login extends React.Component {
                         id="register-username"
                         className="form-control input-lg"
                         placeholder="usuario"
-                      /></label>
+                        required/></label>
                     </div>
                     <div className="form-group">
                     <label>Nombres y apellidos: <input
@@ -77,7 +77,7 @@ class Login extends React.Component {
                         id="register-name"
                         className="form-control input-lg"
                         placeholder="nombres y apellidos"
-                      /></label>
+                        required /></label>
                     </div>
                     <div className="form-group">
                     <label>Edad: <input
@@ -85,7 +85,7 @@ class Login extends React.Component {
                         id="register-age"
                         className="form-control input-lg"
                         placeholder="edad"
-                      /></label>
+                        required/></label>
                     </div>
                     <div className="form-group">
                     <label>Correo electronico: <input
@@ -93,7 +93,7 @@ class Login extends React.Component {
                         id="register-email"
                         className="form-control input-lg"
                         placeholder="email"
-                      /></label>
+                        required /></label>
                     </div>
                     <div className="form-group">
                     <label>Contraseña: <input
@@ -101,7 +101,7 @@ class Login extends React.Component {
                         id="register-password"
                         className="form-control input-lg"
                         placeholder="password"
-                      /></label>
+                        required /></label>
                     </div>
                     <div className="form-group">
                     <label><input
@@ -109,7 +109,7 @@ class Login extends React.Component {
                         id="register-role"
                         className="form-control input-lg"
                         value="User"
-                      /></label>
+                        /></label>
                     </div>
                     <div className="form-group text-center">
                     <label><input
