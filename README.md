@@ -41,6 +41,7 @@ Dueños de autos de Colombia, interesados en venta y/o mantenimiento de automovi
 # Comentarios sobre el cumplimiento de los test
 A continuacón se presenta el análisis realizado para cumplir con las pautas de usabilidad según la normatividad aplicable a Colombia, esta normatividad se encuentra en la página https://ntc5854.accesibilidadweb.co/index.php/explicacion-tecnica/como-se-hacen-las-cosas/principios-de-la-norma/
 * Perceptible
+
 3.1.4.9. Imágenes de texto: 
   Ademas del logo, se encuentra el texto de diseño de la página de inicio.
 3.1.4.8. Presentación visual
