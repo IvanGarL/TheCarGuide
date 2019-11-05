@@ -19,7 +19,7 @@ class CarForm extends Component {
         return(
             <div className="card">
                 <h1>Digite los siguientes datos:</h1>
-                <h3>Los campos marcados (*) son obligatorios:</h3>
+                <h2>Los campos marcados (*) son obligatorios:</h2>
                 <form onSubmit={this.handleSubmit}>
                     <div className="row">
                         <div className="col">
