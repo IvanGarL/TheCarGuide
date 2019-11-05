@@ -16,12 +16,10 @@ class Navegacion extends Component {
       return(
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
       <div className="row align-items-md-center">
-      <div className="col-md-1"></div>
         <div className="col-md-3">
-          <img src="logo.png" id="nav-logo"/>
+          <img src="logo.png" alt="nav-logo" id="nav-logo"/>
         </div>
-            <div className="col-md-8 ">
-
+            <div className="col-md-9">
               <div className="collapse navbar-collapse" id="navbarCollapse">
                   <div className="navbar-nav ml-auto">
                   <NavLink to="/" className="nav-item nav-link link-3" id="btn-inicio">INICIO
