@@ -14,7 +14,7 @@ class Navegacion extends Component {
   };
     render(){
       return(
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark " role="navigation">
       <div className="row align-items-md-center">
         <div className="col-md-3">
           <img src="logo.png" alt="nav-logo" id="nav-logo"/>
