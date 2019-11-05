@@ -47,7 +47,7 @@ class CarForm extends Component {
                     </div>
                     <div className="row">
                         <div className="col">
-                        <label>Placa del auto: (*) <input type="text" className="form-control" placeholder="Ej. ABC-123"/><br></br></label>
+                        <label>Placa del auto: (*) <input type="text" className="form-control" pattern="[A-Za-z]{3}-[0-9]{3}" title="3 letras y 3 numeros separados por el simbolo -" placeholder="Ej. ABC-123"/><br></br></label>
                         </div>
                         <div className="col">
                         <label>Precio de venta: (*) <input type="text" className="form-control" placeholder="Ej. 30000000"/><br></br></label>
