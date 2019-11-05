@@ -7,8 +7,9 @@ class UsersList extends Component {
     this.state= { 
         usuarios:[],
       };
+      this.renderUsers = this.renderUsers.bind(this);
     }
-    getAll(){
+    componentDidMount(){
         fetch(
            "/users" 
         ).then((response)=>{return response.json();
@@ -18,15 +19,17 @@ class UsersList extends Component {
     }
 
     renderUsers() {
+        if (this.state.usuarios.length > 0) 
+        {
         return this.state.usuarios.map(
             (user,i) => <div className="col-md-6">
                 <User obj={user} key={i}/>
             </div>
         )
+        }
     }
     render()
     {
-        this.getAll();
         return(
             <div className="card-deck2 dashboard-background2">
                     <div className="container-fluid">

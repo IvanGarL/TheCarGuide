@@ -8,8 +8,9 @@ class CarsList extends Component {
     this.state= { 
         carros:[],
       };
+      this.renderCars= this.renderCars.bind(this);
     }
-    getAll(){
+    componentDidMount(){
         fetch(
            "/cars" 
         ).then((response)=>{return response.json();
@@ -19,15 +20,17 @@ class CarsList extends Component {
     }
 
     renderCars() {
+        if (this.state.carros.length > 0) 
+        {
         return this.state.carros.map(
             (car,i) => <div className="col-md-4"><Link to={`/cars/${car.license}`}>
                 <Car obj={car} key={i}/>
             </Link> </div>
         )
+        }
     }
     render()
     {
-        this.getAll();
         return(
             <div className="card-deck2 dashboard-background2">
                     <div className="container-fluid">
