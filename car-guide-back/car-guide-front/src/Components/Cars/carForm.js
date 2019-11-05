@@ -31,8 +31,6 @@ class CarForm extends Component {
                     <div className="row">
                         <div className="col">
                         <label>Categoria del auto: <input type="text" className="form-control" placeholder="Categoria"/><br></br></label>
-                       
-                            
                         </div>
                         <div className="col">
                         <label>Color del auto: <input type="text" className="form-control" placeholder="Color"/><br></br></label>
@@ -65,8 +63,6 @@ class CarForm extends Component {
                     <div className="row">
                         <div className="col">
                         <label>Capacidad de cilindraje: <input type="text" className="form-control" placeholder="Cilindraje"/><br></br></label>
-                        <h6></h6>
-                            
                         </div>
                         <div className="col">
                         <label>Modelo del auto: <input type="text" className="form-control" placeholder="Modelo"/><br></br></label>
