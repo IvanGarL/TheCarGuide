@@ -40,7 +40,7 @@ class ServicesList extends Component {
         <div className="container-fluid" background-color="darkslategray">
 
             <div className="row" width="100%" id="titulo-servicios">
-                <img width="100%" src="https://di-uploads-pod6.dealerinspire.com/mariettatoyota/uploads/2019/04/2019-Toyota-Prius-models-banner.jpg"/>
+                <img width="100%" alt="imagen de autos" src="https://di-uploads-pod6.dealerinspire.com/mariettatoyota/uploads/2019/04/2019-Toyota-Prius-models-banner.jpg"/>
             </div>
 
             <div className="row" id="servicios">
