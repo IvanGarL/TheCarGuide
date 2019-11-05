@@ -26,9 +26,9 @@ class ServiceDetail extends Component {
             return (
                 <div>
                     <h1>{this.props.data.name}</h1>
-                    <h3>Description:</h3>
+                    <h3>Descripcion:</h3>
                     <p>{this.props.data.description}</p>
-                    <h3>Price: </h3><p>{this.props.data.price}</p>
+                    <h3>Precio: </h3><p>{this.props.data.price}</p>
                     <img href={`${this.props.data.image}`} alt={`${this.props.data.name}`}/>
                 </div>
             );

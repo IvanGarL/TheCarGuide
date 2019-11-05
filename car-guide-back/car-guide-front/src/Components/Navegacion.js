@@ -10,6 +10,7 @@ class Navegacion extends Component {
     };
   }
   handleClick(){
+    return;
   };
     render(){
       return(
@@ -23,22 +24,17 @@ class Navegacion extends Component {
 
               <div className="collapse navbar-collapse" id="navbarCollapse">
                   <div className="navbar-nav ml-auto">
-                  <NavLink to="/" > 
-                    <a className="nav-item nav-link link-3" id="btn-inicio">INICIO</a>
+                  <NavLink to="/" className="nav-item nav-link link-3" id="btn-inicio">INICIO
                   </NavLink>
-                  <NavLink to="/cars">
-                    <a className="nav-item nav-link link-3" id="btn-cars">VENTAS</a>
+                  <NavLink to="/cars" className="nav-item nav-link link-3" id="btn-cars">VENTAS
                   </NavLink>
-                  <NavLink to="/services" >
-                    <a className=" nav-item nav-link link-3" id="btn-services">SERVICIOS</a>
+                  <NavLink to="/services" className=" nav-item nav-link link-3" id="btn-services">SERVICIOS
                   </NavLink>
-                  <NavLink to="/users" >
-                    <a className=" nav-item nav-link link-3" id="btn-users">USUARIOS</a>
+                  <NavLink to="/users" className=" nav-item nav-link link-3" id="btn-users">USUARIOS
                   </NavLink>
-                  <NavLink to="/car" >
-                    <a className=" nav-item nav-link link-3" id="btn-add">ADMIN</a>
+                  <NavLink to="/car" className=" nav-item nav-link link-3" id="btn-add">ADMIN
                   </NavLink>
-                    <button type="button" id="btn-login" className="btn btn-danger" onClick="handleClick()">LOGIN</button>
+                    <button type="button" id="btn-login" className="btn btn-danger" onClick={this.handleClick()}>LOGIN</button>
                   </div>
               </div>
             </div>
