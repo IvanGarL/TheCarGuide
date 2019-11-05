@@ -28,5 +28,11 @@
     font-size: 20px;
     color: rgb(32, 32, 59);
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+  }
+  #card-sub-title2 {
+    font-size: 20px;
+    color: rgb(32, 32, 59);
+    text-decoration: none;
+    text-align: right;
   }
