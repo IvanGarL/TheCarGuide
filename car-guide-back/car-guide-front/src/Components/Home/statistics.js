@@ -26,21 +26,21 @@ class Home extends Component {
                 <div className="row dashboard-background2">
                     <div className="col-md-4">
                         <div className="card space link">
-                        <h5 className="card-title">Más vendido</h5>
+                        <h1 className="card-title"><b>Más vendido</b></h1>
                         <img className="card-img-top" width="50" height="200" src={`${this.state.carros[4].image}`} alt="Card image cap"></img>
                         <p className="card-sub-title2">{this.state.carros[4].name}</p> 
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="card space link">
-                        <h5 className="card-title"><b>Marca más popular</b></h5>
+                        <h1 className="card-title"><b>Marca más popular</b></h1>
                         <img className="card-img-top" width="50" height="200" src={`${this.state.carros[2].image}`} alt="Card image cap"></img>
                         <p className="card-sub-title2">{this.state.carros[2].brand}</p>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="card space link">
-                        <h5 className="card-title"><b>Modelo más popular</b></h5>
+                        <h1 className="card-title"><b>Modelo más popular</b></h1>
                         <img className="card-img-top" width="50" height="200" src={`${this.state.carros[3].image}`} alt="Card image cap"></img>
                         <p className="card-sub-title2">{this.state.carros[3].model}</p>
                         
