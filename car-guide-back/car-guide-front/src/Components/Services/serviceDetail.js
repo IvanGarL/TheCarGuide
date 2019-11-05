@@ -1,27 +1,52 @@
 import React, { Component } from "react";
 import "../../App.css";
 
-class Service extends Component {
+class ServiceDetail extends Component {
 
-    /* Información disponible en MongoDB
-    *  - Name
-    *  - Description
-    *  - Price
-    *  - Image
-    */
+    constructor(props){
+        super(props);
+        this.state= { 
+            data:{},
+        };
+        this.renderDetail = this.renderDetail.bind(this);
+    }
+
+    componentDidMount()
+    {
+        fetch('/services/'+this.props.obj._id).then( (response) => {
+            return response.json();
+         }).then( (data) => {
+            this.setState({data:data});
+         });            
+    };
+
+    renderDetail() {
+        if (this.state.data) 
+        {
+            return (
+                <div>
+                    <h1>{this.props.data.name}</h1>
+                    <h3>Description:</h3>
+                    <p>{this.props.data.description}</p>
+                    <h3>Price: </h3><p>{this.props.data.price}</p>
+                    <img href={`${this.props.data.image}`} alt={`${this.props.data.name}`}/>
+                </div>
+            );
+        }
+    }
 
     render() {
         return(
-            <div>
-                <h1>{this.props.name}</h1>
-                <h3>Description:</h3>
-                <p>{this.props.description}</p>
-                <h3>Price: </h3><p>{this.props.price}</p>
-                <img href={this.props.image} alt={this.props.name}/>
+            <div className="dashboard-background2">
+                <div className="container-fluid">
+                    <div className="row">
+                        {this.renderDetail()}
+                    </div>
+                </div>
             </div>
         );
     }
     
 }
 
-export default Service;
+export default ServiceDetail;
