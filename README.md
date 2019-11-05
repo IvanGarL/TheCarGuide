@@ -92,7 +92,19 @@ A continuacón se presenta el análisis realizado para cumplir con las pautas de
 3.2.4.1 Evitar bloques
   - No existen bloques periféricos al contenido principal de cada página
 3.2.4.10 Encabezados de sección
-  - 
+  - Todas las secciones presentan un encabezado diciente respecto al contenido
+3.2.4.2 Titulado de páginas
+  - La página tiene títulos que describen el tema de la misma
+3.2.4.3 Orden del foco
+  - Los componentes interactuables por teclado son enfocados en un orden intuitivo y diciente de su jerarquía y propósito
+3.2.4.4 Propósito de los enlaces (en contexto)
+  - Todos los enlaces tienen sentido y significado por sí sólos
+3.2.4.5 Vías múltiples
+ - Existen múltiples formas de alcanzar cualquier página dentro del sitio
+3.2.4.6 Encabezados y etiquetas
+  - Los encabezados y etiquetas son inteligibles, aún fuera de contexto
+3.2.4.7 Foco visible
+  - El foco del teclado siempre es visible desde el momento en que se empieza a usar
 
 <h4>Comprensible</h4>
 <h4>Robusto</h4>
