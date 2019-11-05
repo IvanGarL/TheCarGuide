@@ -3,6 +3,7 @@ import './services.css';
 class Service extends Component {
 
     render(){
+        console.log(this.props);
         return(
             <div className="data-card servicios-card">
                 <div className="row">
@@ -13,7 +14,7 @@ class Service extends Component {
                     <div className="col-7">
                         <div className="row">
                             <div className="col-12 text-left">
-                                <h5 id="card-title">{this.props.service.name}</h5>
+                                <h5 id={`card-title${this.props.service._id}`}>{this.props.service.name}</h5>
                             </div>
                         </div>
                         <div className="row text-left">
