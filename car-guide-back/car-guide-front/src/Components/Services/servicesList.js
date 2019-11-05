@@ -43,7 +43,13 @@ class ServicesList extends Component {
             <div className="row" width="100%" id="titulo-servicios">
                 <img width="100%" src="https://di-uploads-pod6.dealerinspire.com/mariettatoyota/uploads/2019/04/2019-Toyota-Prius-models-banner.jpg"/>
             </div>
-
+            <div className="row"></div>
+            <div className="row text-center" width="100%">
+                <div className="col-12 text-center">
+                    <h1>Servicios</h1>
+                </div>
+            </div>
+            
             <div className="row" id="servicios">
 
                 <div className="col-12">

@@ -15,7 +15,7 @@ Estas soluciones no ofrecen la comunicación con terceros, de manera que se ofre
 Dueños de autos de Colombia, interesados en venta y/o mantenimiento de automoviles.
 
 # Instrucciones
-<h4>Instrucciones de descarga y compilación:</h4>
+<h4>Instrucciones de descarga y despliegue:</h4>
 <ol>
   <li>Clonar el repositorio <a href="https://github.com/isis3710-uniandes/Team04-Entrega4">aqui</a></li>
   <li>Instalar dependencias ejecutando en consola y/o terminal el comando npm install en los directorios car-guide-back y car-guide-front ubicados en TheCarGuide y TheCarGuide/car-guide-back respectivamente</li>
@@ -40,10 +40,11 @@ Dueños de autos de Colombia, interesados en venta y/o mantenimiento de automovi
 
 # Comentarios sobre el cumplimiento de los test
 A continuacón se presenta el análisis realizado para cumplir con las pautas de usabilidad según la normatividad aplicable a Colombia, esta normatividad se encuentra en la página https://ntc5854.accesibilidadweb.co/index.php/explicacion-tecnica/como-se-hacen-las-cosas/principios-de-la-norma/
-* Perceptible
 
+
+<h4>Perceptible</h4>
 3.1.4.9. Imágenes de texto: 
-  Ademas del logo, se encuentra el texto de diseño de la página de inicio.
+  - Ademas del logo, se encuentra el texto de diseño de la página de inicio.
 3.1.4.8. Presentación visual
   - La elección de color de fondo y primer plano por parte del usuario se proyecta para la segunda versión de la aplicación.
   - El ancho de todos los textos no es mayor a 80 caracteres.
@@ -66,9 +67,35 @@ A continuacón se presenta el análisis realizado para cumplir con las pautas de
   - El color no es el único medio de transmisión de información, todos los elementos HTML de la página tienen algun texto auxiliar.
 3.1.3.3. Características sensoriales
   - La funcionalidad del contenido no depende completamente de características sensoriales.
-* Operable
-* Comprensible
-* Robusto
+<br>
+<h4>Operable</h4>
+3.2.1.1 Teclado
+  - Todos los elementos interactuables son alcanzables únicamente con el teclado
+3.2.1.2 Sin trampas para el foco del teclado
+  - El foco sobre cualquier componente alcanzable por teclado se puede quitar usando, también, únicamente el teclado
+3.2.1.3 Teclado (sin excepciones)
+  - No es requerida ninguna velocidad particular de tecleo para operar la página usando exclusivamente el teclado
+3.2.2.1 Tiempo ajustable
+  - No existen límites de tiempo en general
+3.2.2.2 Poner en pausa, detener, ocultar
+  - No existen elementos que deban ser sujetos a estas operaciones
+3.2.2.3 Sin tiempo
+  - No existen interacciones que dependan del tiempo de interacción
+3.2.2.4 Interrupciones
+  - No existen interrupciones sobre las posibles interacciones con la página
+3.2.2.5 Re-autenticación
+  - Todas las actividades realizables en la página se pueden continuar sin pérdida de datos de necesitarse una re-autenticación
+3.2.3.1 Umbral de tres destellos o menos
+  - No existen destellos en general en la página: ni destellos rojos ni más de tres destellos en menos de un segundo
+3.2.3.2 Tres destellos
+  - No existen elementos que destellen más de tres veces por segundo; en general, nada en la página destella
+3.2.4.1 Evitar bloques
+  - No existen bloques periféricos al contenido principal de cada página
+3.2.4.10 Encabezados de sección
+  - 
+
+<h4>Comprensible</h4>
+<h4>Robusto</h4>
 
 # Test de usabilidad: carpeta con los videos de los test
 https://drive.google.com/drive/folders/10_5gpfQ8vlrfxvNSgTnJKBkQmwl5uycQ?usp=sharing

@@ -34,6 +34,12 @@ class CarsList extends Component {
         return(
             <div className="card-deck2 dashboard-background2">
                     <div className="container-fluid">
+                        
+                        <div className="row">
+                            <div className="col-12 text-center">
+                                <h1>Ventas</h1>
+                            </div>
+                        </div>
                         <div className="row">
                             {this.renderCars()}
                         </div>
