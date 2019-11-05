@@ -19,75 +19,62 @@ class CarForm extends Component {
         return(
             <div className="card">
                 <h1>Digite los siguientes datos:</h1>
+                <h2>Los campos marcados (*) son obligatorios:</h2>
                 <form onSubmit={this.handleSubmit}>
                     <div className="row">
                         <div className="col">
-                            <h6>Año de modelo del auto:</h6>
-                            <input type="text" className="form-control" placeholder="Año"/><br></br>
+                            <label>Año de modelo del auto: (*) <input type="text" className="form-control" placeholder="Ej. 1999"/><br></br></label>
                         </div>
                         <div className="col">
-                        <h6>Kilometros recorridos por el auto:</h6>
-                            <input type="text" className="form-control" placeholder="Kilometros recorridos"/><br></br>
+                        <label>Kilometros recorridos por el auto: (*) <input type="text" className="form-control" placeholder="Ej. 100000"/><br></br></label> 
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
-                        <h6>Categoria del auto:</h6>
-                            <input type="text" className="form-control" placeholder="Categoria"/><br></br>
+                        <label>Categoria del auto: (*) <input type="text" className="form-control" placeholder="Ej. Camioneta"/><br></br></label>
                         </div>
                         <div className="col">
-                        <h6>Color del auto:</h6>
-                            <input type="text" className="form-control" placeholder="Color"/><br></br>
+                        <label>Color del auto: (*) <input type="text" className="form-control" placeholder="Ej. Azul"/><br></br></label>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
-                        <h6>Fecha actual:</h6>
-                            <input type="date" className="form-control" placeholder="Fecha"/><br></br>
+                        <label>Fecha actual: (*) <input type="date" className="form-control" placeholder="Fecha"/><br></br></label>     
                         </div>
                         <div className="col">
-                        <h6>Nombre del auto:</h6>
-                            <input type="text" className="form-control" placeholder="Nombre"/><br></br>
+                        <label>Nombre del auto: (*) <input type="text" className="form-control" placeholder="Ej. BMW 509 7"/><br></br></label>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
-                        <h6>Placa del auto:</h6>
-                            <input type="text" className="form-control" placeholder="Placa"/><br></br>
+                        <label>Placa del auto: (*) <input type="text" className="form-control" pattern="[A-Za-z]{3}-[0-9]{3}" title="3 letras y 3 numeros separados por el simbolo -" placeholder="Ej. ABC-123"/><br></br></label>
                         </div>
                         <div className="col">
-                        <h6>Precio de venta:</h6>
-                            <input type="text" className="form-control" placeholder="Precio"/><br></br>
+                        <label>Precio de venta: (*) <input type="text" className="form-control" placeholder="Ej. 30000000"/><br></br></label>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
-                        <h6>Marca del auto:</h6>
-                            <input type="text" className="form-control" placeholder="Marca"/><br></br>
+                        <label>Marca del auto: (*) <input type="text" className="form-control" placeholder="Ej. BMW"/><br></br></label>
                         </div>
                         <div className="col">
-                        <h6>Cilindraje en centimetros cubicos:</h6>
-                            <input type="text" className="form-control" placeholder="Cilindraje (cm)"/><br></br>
+                        <label>Cilindraje en centimetros cubicos: (*) <input type="text" className="form-control" placeholder="Ej 3000"/><br></br></label>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
-                        <h6>Capacidad de cilindraje:</h6>
-                            <input type="text" className="form-control" placeholder="Cilindraje"/><br></br>
+                        <label>Capacidad de cilindraje: (*) <input type="text" className="form-control" placeholder="Ej 3"/><br></br></label>
                         </div>
                         <div className="col">
-                        <h6>Modelo del auto:</h6>
-                            <input type="text" className="form-control" placeholder="Modelo"/><br></br>
+                        <label>Modelo del auto: (*) <input type="text" className="form-control" placeholder="Ej. BMW 509"/><br></br></label>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
-                        <h6>Número de puertas del auto:</h6>
-                            <input type="number" min="1" max="5" className="form-control" placeholder="Número de puertas"/><br></br>
+                        <label>Número de puertas del auto: (*) <input type="number" min="1" max="5" className="form-control" placeholder="4"/><br></br></label>
                         </div>
                         <div className="col">
-                        <h6>Transmision del auto:</h6>
-                            <input type="text" className="form-control" placeholder="Transmision"/><br></br>
+                        <label>Transmision del auto: (*) <input type="text" className="form-control" placeholder="Mecanica"/><br></br></label>
                         </div>
                     </div>
                     <button type="submit" className="btn btn-success">Agregar auto</button><div></div>

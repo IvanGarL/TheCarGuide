@@ -10,10 +10,10 @@ class Car extends Component {
                 <img className="card-img-top" width="50" height="200" src={`${this.props.obj.image}`} alt="Card image cap"></img>
                <div className="row">
                     <div className="col-6">
-                        <h6 id="card-sub-title">Modelo: {this.props.obj.model}</h6>
+                        <h6 className="card-sub-title">Modelo: {this.props.obj.model}</h6>
                     </div>
                     <div className="col-6">
-                        <h6 id="card-sub-title">Tipo: {this.props.obj.category}</h6>   
+                        <h6 className="card-sub-title">Tipo: {this.props.obj.category}</h6>   
                     </div>
                </div>
             </div>
