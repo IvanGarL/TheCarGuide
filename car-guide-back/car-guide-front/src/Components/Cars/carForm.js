@@ -90,7 +90,7 @@ class CarForm extends Component {
                             <input type="text" class="form-control" placeholder="Transmision"/><br></br>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-success">Publicar auto</button>
+                    <button type="submit" class="btn btn-success">Admin</button>
                 </form>
             </div>
             

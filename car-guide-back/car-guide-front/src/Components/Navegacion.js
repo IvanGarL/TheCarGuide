@@ -17,8 +17,7 @@ class Navegacion extends Component {
       <div className="row align-items-md-center">
       <div className="col-md-1"></div>
         <div className="col-md-3">
-          <a><h5 className="text-light ">The Car</h5></a>
-          <a ><h5 className="text-light">GUIDE</h5></a>
+          <img src="logo.png" id="nav-logo"/>
         </div>
             <div className="col-md-8 ">
 
@@ -37,9 +36,9 @@ class Navegacion extends Component {
                     <a className=" nav-item nav-link link-3" id="btn-users">USUARIOS</a>
                   </NavLink>
                   <NavLink to="/car" >
-                    <a className=" nav-item nav-link link-3" id="btn-add">PUBLICAR AUTO</a>
+                    <a className=" nav-item nav-link link-3" id="btn-add">ADMIN</a>
                   </NavLink>
-                    <button type="button" className="btn btn-danger" onClick="handleClick()">LOGIN</button>
+                    <button type="button" id="btn-login" className="btn btn-danger" onClick="handleClick()">LOGIN</button>
                   </div>
               </div>
             </div>
