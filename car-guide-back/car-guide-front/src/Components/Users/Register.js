@@ -1,40 +1,34 @@
 import React from 'react';
-import { Grid, Form, Header, Message } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import { Container, Col, Row, Image } from "react-bootstrap";
-import store from 'store';
+import { post } from 'axios';
 
-class Login extends React.Component {
+class Register extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      username: '',
-      password: '',
+      
       error: false,
     };
 
-    this.handleChange = this.handleChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  onSubmit(e) {
+  handleSubmit(e) {
     e.preventDefault();
+    let username = document.getElementById("register-username").value;
+    let name = document.getElementById("register-name").value;
+    let age = document.getElementById("register-age").value;
+    let email = document.getElementById("register-email").value;
+    let phone = document.getElementById("register-phone").value;
+    let password = document.getElementById("register-password").value; 
+    let role = document.getElementById("register-role").value;
+    var user = {username, name, age, email, phone, password, role };
 
-    const { username, password } = this.state;
-
-    this.setState({ error: false });
-
-    if (!(username === 'george' && password === 'foreman')) {
-      return this.setState({ error: true });
-    }
-
-    console.log("you're logged in. yay!");
-    store.set('loggedIn', true);
-  }
-
-  handleChange(e, { name, value }) {
-    this.setState({ [name]: value });
+    post('/users/signin', user)
+      .then(() => {
+        console.log('added:', user);
+      });
   }
 
   render() {
@@ -96,7 +90,19 @@ class Login extends React.Component {
                         required /></label>
                     </div>
                     <div className="form-group">
+<<<<<<< HEAD
+                      <input
+                        type="number"
+                        id="register-phone"
+                        className="form-control input-lg"
+                        placeholder="celular"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+=======
                     <label>Contraseña: <input
+>>>>>>> 484e83a2ece1beda93cb135e5cad87e3cc15911b
                         type="password"
                         id="register-password"
                         className="form-control input-lg"
@@ -136,4 +142,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default Register;
