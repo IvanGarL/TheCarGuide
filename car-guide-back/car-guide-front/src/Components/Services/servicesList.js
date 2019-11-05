@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Service from "./service.js";
 import "../../App.css";
-import { Link } from "react-router-dom";
 
 class ServicesList extends Component {
 
