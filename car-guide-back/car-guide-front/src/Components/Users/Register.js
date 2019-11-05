@@ -4,37 +4,22 @@ import { Link } from "react-router-dom";
 import { Container, Col, Row, Image } from "react-bootstrap";
 import store from 'store';
 
-class Login extends React.Component {
+class Register extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      username: '',
-      password: '',
+      
       error: false,
     };
 
-    this.handleChange = this.handleChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  onSubmit(e) {
+  
+  handleSubmit(e) {
     e.preventDefault();
-
-    const { username, password } = this.state;
-
-    this.setState({ error: false });
-
-    if (!(username === 'george' && password === 'foreman')) {
-      return this.setState({ error: true });
-    }
-
-    console.log("you're logged in. yay!");
-    store.set('loggedIn', true);
-  }
-
-  handleChange(e, { name, value }) {
-    this.setState({ [name]: value });
+    let email = document.getElementById("login-email").value;
+    let password = document.getElementById("login-password").value;
+    
   }
 
   render() {
@@ -136,4 +121,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default Register;
