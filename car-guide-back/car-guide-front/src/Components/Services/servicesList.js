@@ -10,10 +10,10 @@ class ServicesList extends Component {
         this.state = {
             servicios: []
         };
-        
+        this.renderServices = this.renderServices.bind(this);
     }
 
-    getAll() {
+    componentDidMount() {
         fetch("/services/").then((response) => {
             return response.json();
         }).then((data) => {
@@ -22,6 +22,8 @@ class ServicesList extends Component {
     }    
 
     renderServices() {
+        if (this.state.servicios.length > 0) 
+        {
         return (this.state.servicios.map(
             (servicio, i) =>
                 <div className="col-6">
@@ -30,11 +32,11 @@ class ServicesList extends Component {
                     </a>
                 </div>
         ));
+        }
     };
 
     render()
     {
-        this.getAll();
         return(
         <div className="container-fluid" background-color="darkslategray">
 
