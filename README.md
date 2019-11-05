@@ -109,7 +109,24 @@ A continuacón se presenta el análisis realizado para cumplir con las pautas de
   -  Siempre es visible en qué página del sitio se está navegando con respecto a las demás páginas
 <br>
 <h4>Comprensible</h4>
-
+3.3.3.5. Ayuda
+El formulario para agregar un nuevo auto los campos tienen ejemplos como ayuda para el usuario.
+3.3.3.4. Prevención de errores
+No aplica.
+3.3.3.3. Sugerencias ante errores
+El formulario para agregar un nuevo auto detecta algunos de los errores esperados en la digitación de los datos, en próximas versiones se espera continuar mejorando esta norma.
+3.3.3.2. Etiquetas e instrucciones
+El formulario para agregar un nuevo auto los campos tienen ejemplos como ayuda para el usuario.
+3.3.3.1. Identificación de errores
+3.3.2.5. Cambios a petición
+La aplicación se implementa de tal manera que toda renderizacion se hace cuando el usuario interactua con las diferentes funcionalidades.
+3.3.2.4. Identificación coherente
+Los servicios y la venta de autos se enlistan por medio de cards, las cuales permiten la identificación del mismo proceso para diferentes componentes.
+3.3.2.3. Navegación coherente.
+La navegación no varia.
+3.3.2.2. Al recibir entradas.
+No hay cambios de contexto automaticos en el formulario para agregar un auto.
+3.3.2.1. Al recibir el foco
 <br>
 <h4>Robusto</h4>
 3.4.1.1 Procesamiento
