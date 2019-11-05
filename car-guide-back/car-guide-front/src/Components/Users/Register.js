@@ -116,7 +116,7 @@ class Login extends React.Component {
                         type="submit"
                         id="register-button"
                         className="btn btn-primary btn-lg btn-block"
-                        value="Ingresar"
+                        value="Registar"
                       /></label>
                     </div>
                     <div className="form-group text-center">
