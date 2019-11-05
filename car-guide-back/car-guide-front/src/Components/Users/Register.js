@@ -1,8 +1,7 @@
 import React from 'react';
-import { Grid, Form, Header, Message } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import { Container, Col, Row, Image } from "react-bootstrap";
-import store from 'store';
+import { post } from 'axios';
 
 class Register extends React.Component {
   constructor(props) {
@@ -14,12 +13,22 @@ class Register extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  
+
   handleSubmit(e) {
     e.preventDefault();
-    let email = document.getElementById("login-email").value;
-    let password = document.getElementById("login-password").value;
-    
+    let username = document.getElementById("register-username").value;
+    let name = document.getElementById("register-name").value;
+    let age = document.getElementById("register-age").value;
+    let email = document.getElementById("register-email").value;
+    let phone = document.getElementById("register-phone").value;
+    let password = document.getElementById("register-password").value; 
+    let role = document.getElementById("register-role").value;
+    var user = {username, name, age, email, phone, password, role };
+
+    post('/users/signin', user)
+      .then(() => {
+        console.log('added:', user);
+      });
   }
 
   render() {
@@ -78,6 +87,14 @@ class Register extends React.Component {
                         id="register-email"
                         className="form-control input-lg"
                         placeholder="email"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="number"
+                        id="register-phone"
+                        className="form-control input-lg"
+                        placeholder="celular"
                       />
                     </div>
                     <div className="form-group">
