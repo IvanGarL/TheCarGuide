@@ -1,8 +1,6 @@
 import React from 'react';
-import { Grid, Form, Header, Message } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
-import { Container, Col, Row, Image } from "react-bootstrap";
-import store from 'store';
+import { Container, Col, Row } from "react-bootstrap";
 
 class Login extends React.Component {
   constructor(props) {
@@ -18,6 +16,7 @@ class Login extends React.Component {
     e.preventDefault();
     let email = document.getElementById("login-email").value;
     let password = document.getElementById("login-password").value;
+    console.log(email," ",password, " check" )
     
   }
 

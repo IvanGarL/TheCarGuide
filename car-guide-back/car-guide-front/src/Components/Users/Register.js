@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Container, Col, Row, Image } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import { post } from 'axios';
 
 class Register extends React.Component {
@@ -90,19 +90,7 @@ class Register extends React.Component {
                         required /></label>
                     </div>
                     <div className="form-group">
-<<<<<<< HEAD
-                      <input
-                        type="number"
-                        id="register-phone"
-                        className="form-control input-lg"
-                        placeholder="celular"
-                      />
-                    </div>
-                    <div className="form-group">
-                      <input
-=======
                     <label>Contraseña: <input
->>>>>>> 484e83a2ece1beda93cb135e5cad87e3cc15911b
                         type="password"
                         id="register-password"
                         className="form-control input-lg"
